@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react';
 
-import { StationsList } from "./components";
-import "./App.css";
+import { StationsList } from './components';
+import './App.css';
 
 function App() {
   return (
