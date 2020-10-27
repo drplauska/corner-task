@@ -1,0 +1,329 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders 1 item correctly 1`] = `
+<div
+  className="container"
+>
+  <div
+    className="header"
+  >
+    <button
+      onClick={[Function]}
+      type="button"
+    >
+      <img
+        alt="go back"
+        className="icon"
+        src="test-file-stub"
+      />
+    </button>
+    <span
+      className="label"
+    >
+      STATIONS
+    </span>
+    <button
+      onClick={[Function]}
+      type="button"
+    >
+      <img
+        alt="switch off"
+        className="icon"
+        src="test-file-stub"
+      />
+    </button>
+  </div>
+  <div
+    className="list"
+  >
+    <div
+      className="item"
+    >
+      <div
+        className="detail"
+      >
+        <button
+          onClick={[Function]}
+          type="button"
+        >
+          <img
+            alt="minus"
+            className="button"
+            src="test-file-stub"
+          />
+        </button>
+        <img
+          alt="station avatar"
+          className="avatar"
+          src="test-file-stub"
+        />
+        <button
+          onClick={[Function]}
+          type="button"
+        >
+          <img
+            alt="plus"
+            className="button"
+            src="test-file-stub"
+          />
+        </button>
+      </div>
+      <button
+        className="details"
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          className="label"
+        >
+          Maximum FM
+        </span>
+        <span
+          className="frequency"
+        >
+          142,2
+        </span>
+      </button>
+    </div>
+  </div>
+  <div
+    className="footer"
+  >
+    <span
+      className="label"
+    >
+      CURRENTLY PLAYING
+    </span>
+    <span
+      className="station"
+    >
+      Maximum FM
+    </span>
+  </div>
+</div>
+`;
+
+exports[`renders 5 items correctly 1`] = `
+<div
+  className="container"
+>
+  <div
+    className="header"
+  >
+    <button
+      onClick={[Function]}
+      type="button"
+    >
+      <img
+        alt="go back"
+        className="icon"
+        src="test-file-stub"
+      />
+    </button>
+    <span
+      className="label"
+    >
+      STATIONS
+    </span>
+    <button
+      onClick={[Function]}
+      type="button"
+    >
+      <img
+        alt="switch off"
+        className="icon"
+        src="test-file-stub"
+      />
+    </button>
+  </div>
+  <div
+    className="list"
+  >
+    <div
+      className="item"
+    >
+      <div
+        className="detail"
+      >
+        <button
+          onClick={[Function]}
+          type="button"
+        >
+          <img
+            alt="minus"
+            className="button"
+            src="test-file-stub"
+          />
+        </button>
+        <img
+          alt="station avatar"
+          className="avatar"
+          src="test-file-stub"
+        />
+        <button
+          onClick={[Function]}
+          type="button"
+        >
+          <img
+            alt="plus"
+            className="button"
+            src="test-file-stub"
+          />
+        </button>
+      </div>
+      <button
+        className="details"
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          className="label"
+        >
+          Putin FM
+        </span>
+        <span
+          className="frequency"
+        >
+          66,6
+        </span>
+      </button>
+    </div>
+    <div
+      className="item"
+    >
+      <button
+        className="details"
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          className="label"
+        >
+          Dribbble FM
+        </span>
+        <span
+          className="frequency"
+        >
+          101,2
+        </span>
+      </button>
+    </div>
+    <div
+      className="item"
+    >
+      <button
+        className="details"
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          className="label"
+        >
+          Doge FM
+        </span>
+        <span
+          className="frequency"
+        >
+          99,4
+        </span>
+      </button>
+    </div>
+    <div
+      className="item"
+    >
+      <button
+        className="details"
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          className="label"
+        >
+          Ballads FM
+        </span>
+        <span
+          className="frequency"
+        >
+          87,1
+        </span>
+      </button>
+    </div>
+    <div
+      className="item"
+    >
+      <button
+        className="details"
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          className="label"
+        >
+          Maximum FM
+        </span>
+        <span
+          className="frequency"
+        >
+          142,2
+        </span>
+      </button>
+    </div>
+  </div>
+  <div
+    className="footer"
+  >
+    <span
+      className="label"
+    >
+      CURRENTLY PLAYING
+    </span>
+    <span
+      className="station"
+    >
+      Putin FM
+    </span>
+  </div>
+</div>
+`;
+
+exports[`renders no items correctly 1`] = `
+<div
+  className="container"
+>
+  <div
+    className="header"
+  >
+    <button
+      onClick={[Function]}
+      type="button"
+    >
+      <img
+        alt="go back"
+        className="icon"
+        src="test-file-stub"
+      />
+    </button>
+    <span
+      className="label"
+    >
+      STATIONS
+    </span>
+    <button
+      onClick={[Function]}
+      type="button"
+    >
+      <img
+        alt="switch off"
+        className="icon"
+        src="test-file-stub"
+      />
+    </button>
+  </div>
+  <div
+    className="list"
+  />
+  <div
+    className="footer"
+  />
+</div>
+`;
