@@ -11,6 +11,9 @@ interface StationsListProps {
 
 function RadioWidget({ data }: StationsListProps) {
   const [activeStation, setActiveStation] = useState<Station | null>(data[0]);
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const [volume, setVolume] = useState(0);
+
   return (
     <div className={styles.container}>
       <Header />
@@ -18,6 +21,8 @@ function RadioWidget({ data }: StationsListProps) {
         activeStationId={activeStation?.id}
         data={data}
         onClick={(station) => setActiveStation(station)}
+        onVolumeIncrement={() => setVolume((currentVolume) => currentVolume + 1)}
+        onVolumeDecrement={() => setVolume((currentVolume) => currentVolume - 1)}
       />
       <Footer activeStationName={activeStation?.name} />
     </div>

@@ -1,9 +1,11 @@
 import React from 'react';
-import StationAvatar from '@assets/images/station_avatar.png';
+import StationAvatar from '@assets/images/station-avatar.png';
 import RadioWidget from './components/RadioWidget';
+import { Station } from './components/RadioWidget/types';
+
 import './App.css';
 
-const mockStations = [
+const mockStations: Station[] = [
   { id: '0', name: 'Putin FM', frequency: '66,6', avatar: StationAvatar },
   { id: '1', name: 'Dribbble FM', frequency: '101,2', avatar: StationAvatar },
   { id: '2', name: 'Doge FM', frequency: '99,4', avatar: StationAvatar },
