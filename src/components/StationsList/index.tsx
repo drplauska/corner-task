@@ -1,17 +1,21 @@
 import React, { useState } from 'react';
 import BackArrow from '@assets/icons/back-arrow.png';
 import SwitchIcon from '@assets/icons/switch.png';
+import MinusIcon from '@assets/icons/minus.png';
+import PlusIcon from '@assets/icons/plus.png';
+import StationAvatar from '@assets/images/station_avatar.png';
 import './index.scss';
 
 const mockStations = [
-  { name: 'Putin FM', frequency: '66,6' },
-  { name: 'Dribbble FM', frequency: '101,2' },
-  { name: 'Ballads FM', frequency: '87,1' },
-  { name: 'Maximum FM', frequency: '142,2' },
+  { id: '0', name: 'Putin FM', frequency: '66,6' },
+  { id: '1', name: 'Dribbble FM', frequency: '101,2' },
+  { id: '2', name: 'Doge FM', frequency: '99,4' },
+  { id: '3', name: 'Ballads FM', frequency: '87,1' },
+  { id: '4', name: 'Maximum FM', frequency: '142,2' },
 ];
 
 function StationsList() {
-  const [activeStation, setActiveStation] = useState('0');
+  const [activeStation, setActiveStation] = useState<String | null>('0');
 
   return (
     <div className="container">
@@ -25,11 +29,33 @@ function StationsList() {
         </button>
       </div>
       <div className="container__list">
-        {mockStations.map(({ name, frequency }) => (
-          <div className="container__list__item" key={name}>
-            <span className="container__list__item__label">{name}</span>
-            <span className="container__list__item__frequency">{frequency}</span>
-          </div>
+        {mockStations.map(({ id, name, frequency }) => (
+          <>
+            {activeStation === id && (
+              <div className="container__list__detail">
+                <button type="button">
+                  <img src={MinusIcon} alt="minus" className="container__list__detail__button" />
+                </button>
+                <img
+                  src={StationAvatar}
+                  alt="station avatar"
+                  className="container__list__detail__avatar"
+                />
+                <button type="button">
+                  <img src={PlusIcon} alt="plus" className="container__list__detail__button" />
+                </button>
+              </div>
+            )}
+            <button
+              type="button"
+              className="container__list__item"
+              key={name}
+              onClick={() => setActiveStation(id === activeStation ? null : id)}
+            >
+              <span className="container__list__item__label">{name}</span>
+              <span className="container__list__item__frequency">{frequency}</span>
+            </button>
+          </>
         ))}
       </div>
       <div className="container__footer">

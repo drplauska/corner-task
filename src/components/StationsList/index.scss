@@ -23,16 +23,31 @@
   }
 
   .container__list {
-    padding: 10px;
+    padding: 10px 20px;
     background-color: #292933;
     border-bottom: 1px solid gray;
+
+    .container__list__detail {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding-top: 18px;
+      .container__list__detail__avatar {
+        width: 45%;
+      }
+      .container__list__detail__button {
+        height: 30px;
+      }
+    }
     .container__list__item {
+      width: 100%;
       padding: 15px 0;
       display: flex;
       justify-content: space-between;
       .container__list__item__label,
       .container__list__item__frequency {
         color: #a2abbd;
+        font-size: 1.2rem;
       }
       .container__list__item__frequency {
         font-weight: 700;
@@ -50,12 +65,14 @@
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     background-color: #25252f;
+    padding: 20px 0;
     .container__footer__info {
-      color: orange;
+      color: #edae61;
       font-size: 0.65rem;
     }
     .container__footer__station {
       font-size: 1.3rem;
+      color: #a2abbd;
     }
   }
 }
