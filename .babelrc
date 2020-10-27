@@ -6,10 +6,10 @@
       {
         "root": ["."],
         "alias": {
-          "@src": "./src",
           "@assets": "./src/assets"
         }
       }
-    ]
+    ],
+    ["@babel/plugin-proposal-optional-chaining"]
   ]
 }

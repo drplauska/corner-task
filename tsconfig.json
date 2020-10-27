@@ -16,7 +16,7 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react",
-    "paths": { "@src": ["./src"], "@assets": ["./src/assets"] }
+    "paths": { "@assets/*": ["./src/assets/*"] }
   },
   "include": ["."]
 }

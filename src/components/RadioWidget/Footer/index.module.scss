@@ -1,0 +1,17 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: #25252f;
+  padding: 20px 0;
+  .label {
+    color: #edae61;
+    font-size: 0.65rem;
+  }
+  .station {
+    font-size: 1.3rem;
+    color: #a2abbd;
+  }
+}
